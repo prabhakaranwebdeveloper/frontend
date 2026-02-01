@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(171, 66%, 44%);
+  --blue: hsl(233, 100%, 69%);
+
+  --gray-dark: hsl(210, 10%, 33%);
+  --gray-light: hsl(201, 11%, 66%);
+
+  --max-width: 1100px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--gray-dark);
+  font-weight: 600;
+}
+
+p {
+  max-width: 650px;
+  margin: 1.5rem auto;
+}
+
+section {
+  padding: 5rem 1.5rem;
+}
+
+header {
+  background-image: url("./assets/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 120px;
+  /* width: 6%; */
+}
+
+.hero img {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  margin-top: 1.5rem;
+  opacity: 0.4;
+  color: gray;
+  font-weight: 600;
+}
+
+.btn-group {
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin: 0.6rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.ios {
+  background-color: var(--green);
+}
+
+.btn.mac {
+  background-color: var(--blue);
+}
+
+.snippets {
+  max-width: var(--max-width);
+  margin: 4rem auto 0;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.section-text {
+  opacity: 0.4;
+  color: gray;
+  font-weight: 600;
+}
+
+.snippets p {
+  opacity: 0.4;
+  color: gray;
+  font-weight: 600;
+}
+
+.snippets img {
+  width: 50%;
+  margin-left: -6rem;
+}
+
+.features {
+  text-align: left;
+}
+
+.features h3 {
+  margin-bottom: 0.7rem;
+}
+
+.devices {
+  width: 70%;
+  margin-top: 4rem;
+}
+
+.workflow {
+  max-width: var(--max-width);
+  margin: 4rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.workflow div {
+  max-width: 320px;
+}
+
+.workflow img {
+  margin-bottom: 2rem;
+}
+
+.workflow p {
+  opacity: 0.4;
+  color: gray;
+  font-weight: 600;
+}
+
+.logos {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.logos img {
+  width: 140px;
+}
+
+.footer {
+  background-color: hsl(201, 11%, 96%);
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+.footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: var(--gray-dark);
+}
+
+.footer li:hover {
+  color: var(--green);
+}
+
+.social img {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .hero img{
+    width: 10%;
+  }
+
+  .hero {
+    background: url("./assets/bg-header-desktop.png");
+    background-repeat: no-repeat;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .snippets {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .snippets img {
+    width: 90%;
+    margin: 0;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .devices {
+    width: 90%;
+  }
+
+  .workflow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos {
+    flex-direction: column;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer ul {
+    text-align: center;
+  }
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 500px) {
+ .hero img{
+    width: 40%;
+ }
+
+.btn{
+    width: 90%;
+ }
+.logos{
+    margin-bottom: 40px;
+}
+ section{
+    padding: 0;
+ }
+
+ .footer-logo{
+    margin-bottom: 25px;
+ }
+ .footer li{
+    margin-bottom: 30px;
+ }
+ .footer{
+    display: block;
+ }
+ .snippets-header{
+    margin-top: 30px;
+ }
+ .snippets p{
+    width: 95%;
+ }
+ .section{
+    margin-bottom: 100px;
+ }
+}
