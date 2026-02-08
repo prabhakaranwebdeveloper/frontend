@@ -35,12 +35,10 @@ p {
   margin: 1.5rem auto;
 }
 
-/* section { */
-  /* padding: 5rem 1.5rem; */
-/* } */
+
 
 .snippets-section{
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .features p{
@@ -97,10 +95,12 @@ header {
 
 .btn.ios {
   background-color: var(--green);
+  box-shadow: 0 12px 20px rgba(38, 186, 164, 0.45);
 }
 
 .btn.mac {
   background-color: var(--blue);
+  box-shadow: 0 12px 20px rgba(97, 115, 255, 0.45);
 }
 
 .snippets {
@@ -126,20 +126,31 @@ header {
   margin-top:80px;
 }
 
+.download-section{
+  margin-top: 50px;
+}
+
 .snippets img {
   width: 50%;
   margin-left: -6rem;
 }
+
+.snippets h2 {
+  width: 50%;
+  margin-left: -6rem;
+}
+
+.snippets-header,.access-section-header,.workflow-section-header,.clip-header{
+   font-size: 35px;
+ }
+
 
 .features {
   text-align: left;
   margin-top: 50px;
 }
 
-/* .features h3 {
-  margin-bottom: 0.7rem;
- 
-} */
+
 .workflow-section{
   margin-top: 40px;
 }
@@ -148,11 +159,18 @@ header {
   margin-top: 4rem;
 }
 
+
+
 .workflow {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items:start;
+  gap: 3rem;
   margin-top: 60px;
+}
+
+.sneak{
+  margin-top: 8px;
 }
 
 .workflow div {
@@ -161,6 +179,7 @@ header {
 
 .workflow img {
   margin-bottom: 2rem;
+  width: 40px;
 }
 
 .workflow p {
@@ -175,21 +194,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 45px;
+  gap: 100px;
+  margin-top: 50px;
 }
 
 .logos img {
-  width: 100px;
+  width: 110px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .footer {
   background-color: hsl(201, 11%, 96%);
-  padding: 3rem 1.5rem;
+  /* padding:60px 140px; */
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  gap: 135px;
+  align-items: start;
   max-width: 100%;
 }
 
@@ -206,6 +229,7 @@ header {
   margin-bottom: 1rem;
   cursor: pointer;
   color: var(--gray-dark);
+  font-weight: 500;
 }
 
 .footer li:hover {
@@ -218,7 +242,7 @@ header {
 }
 
 .last-btn{
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 
@@ -281,19 +305,49 @@ header {
 /* Responsive Mobile */
 
 @media (max-width: 500px) {
- .hero img{
+
+
+ .hero h1 {
+    font-size:30px;
+    padding:0px 40px;
+  }  .hero img{
     width: 40%;
+ }
+ .hero p{
+  font-size:15px;
+  text-align: center;
+ }
+ .snippets-header{
+  font-size: 30px;
  }
 
 .btn{
     width: 90%;
  }
+ .section-text{
+  font-size:15px;
+   padding:0px 40px;
+ }
+     .snippets img{
+      width: 80%;
+     }
+     .snippets{
+      gap: 0px;
+     }
+
+     .snippets p{
+      font-size: 15px;
+     }
+     .features h3{
+      font-size: 25px;
+     }
+
+ .snippets-section{
+  margin-top: 130px;
+ }
 .logos{
     margin-bottom: 40px;
 }
- /* section{
-    padding: 0;
- } */
 
  .footer-logo{
     margin-bottom: 25px;
@@ -307,10 +361,37 @@ header {
  .snippets-header{
     margin-top: 30px;
  }
- .snippets p{
-    width: 95%;
+ .features  p{
+    width: 90%;
+    margin: auto;
+      margin-bottom: 15px;
  }
- /* .section{
-    margin-bottom: 100px;
- } */
+  .features  h3{
+    margin-bottom: 15px;
+ }
+ .access-section{
+  margin-top: 100px;
+ }
+ .access-section-header,.workflow-section-header,.clip-header{
+  font-size: 30px;
+ }
+.clip-header{
+  padding: 0px 20px;
+}
+ .workflow p{
+  font-size: 15px;
+ }
+ .workflow-section{
+  margin-top: 80px;
+ }
+ .logos{
+  gap:80px;
+  margin-bottom: 150px;
+ }
+ .logos img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+   width: 40%;
+}
+
 }
